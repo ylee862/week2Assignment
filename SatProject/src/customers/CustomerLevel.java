@@ -1,3 +1,5 @@
+package customers;
+
 public enum CustomerLevel {
 
     VIP("vip 등급 고객"),

@@ -1,3 +1,5 @@
+package delivery;
+
 public class DeliveryInfo {
     private String modelName;
     private String hour;

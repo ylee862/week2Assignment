@@ -1,3 +1,5 @@
+package staff;
+
 public enum ShoeFeatures {
     STABILITY("안정성", "Stability"),
     COMFORT("편안함", "Comfort"),

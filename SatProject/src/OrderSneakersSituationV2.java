@@ -1,3 +1,7 @@
+import customers.*;
+import delivery.DeliveryManager;
+import staff.Staff;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -38,6 +42,22 @@ public class OrderSneakersSituationV2 {
                 String customerName = responseArray[1];
                 boolean isCustomerLikeDelivery = Boolean.parseBoolean(responseArray[2]);
                 Long cache = Long.parseLong(responseArray[3]);
+                String sneakersModelName = responseArray[4];
+
+                Customers customer = null;
+
+                switch (customerLevel) {
+                    case VIP:
+                        customer = new VIPCustomer();
+                        break;
+                    case GOLD:
+                        customer = new GoldCustomer();
+                        break;
+                    case SILVER:
+                        customer = new SilverCustomer();
+                        break;
+                }
+
 
 
 
